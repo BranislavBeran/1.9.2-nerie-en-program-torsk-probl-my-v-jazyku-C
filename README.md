@@ -1,0 +1,1 @@
+# 1.9.2-nerie-en-program-torsk-probl-my-v-jazyku-C
