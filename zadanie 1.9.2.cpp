@@ -39,9 +39,9 @@ char circ_circ_inner_tangents(CIRCLE *c1, CIRCLE *c2, LINE *t1, LINE *t2){
 	vektorssX=c2->c.x-c1->c.x;					
 	vektorssY=c2->c.y-c1->c.y;																					//suradnice vektoru medzi stredmi kruznic
 
-	if(c1->c.x==c2->c.x&&c1->c.y==c2->c.y&&c1->r==c2->r) return 0;
+	if(c1->c.x==c2->c.x&&c1->c.y==c2->c.y&&c1->r==c2->r)	 return 0;
 
-	else if(((vzdialenost<(c1->r+c2->r))&&(fabs(vzdialenost-fabs(c1->r-c2->r))>=tolerancia))||vzdialenost<abs(c1->r-c2->r))	return 0;	//v pripade ak nemaju ziadne vnutorne dotycnice
+	else if(((vzdialenost<(c1->r+c2->r))&&(fabs(vzdialenost-fabs(c1->r-c2->r))>=tolerancia))||vzdialenost<abs(c1->r-c2->r))		return 0;	//v pripade ak nemaju ziadne vnutorne dotycnice
 
 	else if(fabs(vzdialenost-fabs(c1->r+c2->r))<=tolerancia){  													//v pripade ak maju 1 vnutornu dotycnicu jedna kruznica nelezi v druhej
 		
